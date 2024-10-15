@@ -107,6 +107,13 @@ img {
 
  }
 
+.screenshot {
+    width: 75%;
+    margin-inline: auto;
+    border-radius: 1rem;
+    border: 1px solid silver;
+}
+
 /*--------------------------------*/
 /* Styling for small screens      */
 /*--------------------------------*/

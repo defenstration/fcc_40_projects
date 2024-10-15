@@ -1,21 +1,37 @@
 <%- include('../views/partials/header.ejs') %>
 
-<h2>Homepage</h2>
+<h2 class = "page-title">Homepage</h2>
 
-<p>I am working through the Udemy course <a href = "https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=ST8MT101424">The Ultimate 2024 Web Development Bootcamp</a> and I wanted to build some projects to nail down the content. Alongside the course I was working through the <a href = "freecodecamp.org">freeCodeCamp</a> curriculum and I came upon the article <a href = "https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-color-flipper">40 JavaScript Projects for Beginners – Easy Ideas to Get Started Coding JS</a> and decided that building them in one site would be a good excercise.</p>
+<section class = "intro">
+    <p>I am working through the Udemy course <a href = "https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=ST8MT101424">The Ultimate 2024 Web Development Bootcamp</a> and I wanted to build some projects to nail down the content. Alongside the course I was working through the <a href = "freecodecamp.org">freeCodeCamp</a> curriculum and I came upon the article <a href = "https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-color-flipper">40 JavaScript Projects for Beginners – Easy Ideas to Get Started Coding JS</a> and decided that building them in one site would be a good excercise.</p>
 
-<br />
+    <br />
 
-<p>So...here we go!</p>
+    <p>So...here we go!</p>
+</section>
 
-<h3>Project 0 - The Setup</h3>
+<section>
+    <h3 class = "section-header">Project 0 - The Setup</h3>
 
-<p>So the first project was to actually get everything set up. I knew I wanted to add the things I learned in the bootcamp to the site, and that began with adding the items into the environment. The packages used at this part of the bootcamp were:</p>
+    <p>So the first project was to actually get everything set up. I knew I wanted to add the things I learned in the bootcamp to the site, and that began with adding the items into the environment. The packages used at this part of the bootcamp were:</p>
 
-<ul>
-    <li>Express</li>
-    <li>Ejs</li>
-    <li>Body Parser</li>
-</ul>
+    <ul>
+        <li>Express</li>
+        <li>Ejs</li>
+        <li>Body Parser</li>
+    </ul>
+
+    <p>Nothing too extravagent, but I had totally forgotten about using static with express and that took me a few minutes to notice. Once that was taken care of, along with one ever infuriating typo, I got a working site!</p>
+
+    <img src = "/assets/images/Screenshot-basicPage.png" class = "screenshot" alt = "screenshot of basic page">
+</section>
+
+<section>
+    <h3 class = "section-header">Project 1 - Color Flipper</h3>
+
+    <p>Once my environment was set up it was time to start working on the first project - a color flipper. This is a pretty simple project to choose a random background color when a button was clicked. When I went to see how the site performed it was actually broke with a site not found error, so I couldn't really see it in action. Not a big deal for something like this.</p>
+
+    <p>I decided to nest the projects in a project folder, then created "color-flipper.ejs" and started working on it.</p>
+</section>
 
 <%- include('../views/partials/footer.ejs') %>
