@@ -1,16 +1,19 @@
 <%- include('../../../partials/header.ejs') %>
     <link rel = "stylesheet" href = "/styles/project_specific_css/color-style.css">
+    <div id = "background">
+        <h2>Color Flipper</h2>
 
-    <h2>Color Flipper</h2>
+        <div class = "project flex">
+            <div class = "color-info flex">
+                <p id = "color-text">Welcome to the Color Flipper!</p>    
 
-    <div class = "project flex">
-        <div class = "color-info flex">
-            <p>Background Color: </p>
-
-            <button class = "color-flip-btn">Click Me!</button>
+                <button class = "color-flip-btn">Click Me!</button>
+            </div>
         </div>
     </div>
-
-    <script src="/scripts/color-script.js"></script>
+    <script type = "module" src="/scripts/color-script.js"></script>
 
 <%- include('../../../partials/footer.ejs') %>
+
+
+

@@ -1,13 +1,27 @@
-.project {
+.project, #background {
     height: 100%;
     width: 100%;
 }
 
-.flex {
-    justify-content: center;
-    align-items: center;
+#background {
+    background-color: lightslategray;
+    padding: 3rem;
+
 }
 
-body {
-    background-color: aquamarine;
+.color-info {
+    flex-direction: column;
+
+}
+
+#color-text {
+    margin: 1rem;
+    font-size: 2rem;
+    background-color: gray;
+    padding: 1rem;
+}
+
+.project {
+    align-items: center;
+    justify-content: center;
 }

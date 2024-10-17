@@ -22,6 +22,14 @@ app.get("/color-flipper", (req, res) => {
     res.render("projects/projects/color-flipper/color-flipper.ejs")
 })
 
+app.get("/counter", (req, res) => {
+    res.render("projects/projects/counter/counter.ejs")
+})
+
+app.get("/reviews", (req, res) => {
+    res.render("projects/projects/reviews/reviews.ejs")
+})
+
 app.listen(port, () => {
     console.log(`Listening on port: ${port}`)
 })

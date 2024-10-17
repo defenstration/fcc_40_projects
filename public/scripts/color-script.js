@@ -21,5 +21,20 @@ const colors = [
 
 colorBtn.addEventListener("click", () => {
     let number = Math.floor(Math.random() * 15)
-    console.log(number)
+    
+    let color = colors[number]
+
+    let colorName
+    let colorHSL
+    
+    for (let key in color) {
+      colorName = key
+      colorHSL = color[key]
+    }
+    
+    const colorText = document.getElementById("color-text")
+    const background = document.getElementById("background")
+
+    colorText.textContent = `Background Color: ${colorName}`
+    background.style.backgroundColor = colorHSL
 })

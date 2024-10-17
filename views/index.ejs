@@ -32,6 +32,20 @@
     <p>Once my environment was set up it was time to start working on the first project - a color flipper. This is a pretty simple project to choose a random background color when a button was clicked. When I went to see how the site performed it was actually broke with a site not found error, so I couldn't really see it in action. Not a big deal for something like this.</p>
 
     <p>I decided to nest the projects in a project folder, then created "color-flipper.ejs" and started working on it.</p>
+
+    <p>The project itself isn't particularly invloved, but what I did learn a lot about was file structuring in express. My first instinct was to house the specific local css and js files for the style and functionality of each project in the folder with the ejs file. This turned out to be a massive headache, as linking them that way just didn't work. There might be a way that I didn't figure out, but the approach I landed on was to create a folder for project specific css and js. That allowed me to link them from the static "public" file I have set up.</p>
+
+    <p>This is also where I encountered an issue with using express inside those files. My first approach was to use a POST to return the color name and color to the page. I couldn't get that to work. I think it is because I trying to do server-side work on the client-side. I scratched that approach and returned to doing the work with vanilla javascript and it was pretty straight forward from there. I used ChatGPT to generate an array of color objects, and used an event listener to generate a random number to pick from that list. Then set the text content and background color style to match</p>
 </section>
 
+<section>
+    <h3 class = "section-header">Project 2 - Create a Counter</h3>
+
+    <p>The second project was to create a counter that had an increase and decrease button, as well as a reset button. The number needed to be updated when the buttons were pressed and the number needed to be colored based on whether it was odd or even. I could think of a few ways to set up the buttons, but I decided to keep it simple and add event listeners to each instead of doing a querySelectorAll and a switch case. I make a setCount formula with an if statement and that was the most of this project.</p>
+</section>
+
+<section>
+    <h3 class = "section-header">Project 3 - Review Carousel</h3>
+    <p></p>
+</section>
 <%- include('../views/partials/footer.ejs') %>
