@@ -1,0 +1,16 @@
+#project-wrapper, #faq-box {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#project-wrapper {
+    align-items: center;
+}
+
+.container {
+    border: 1px solid silver;
+    border-radius: .5rem;
+    padding: 1rem;
+    gap: 2rem;
+}

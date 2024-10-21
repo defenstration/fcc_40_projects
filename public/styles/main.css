@@ -101,7 +101,14 @@ img {
 
  #background {
     padding: 3rem;
+    grid-template-rows: auto 1fr;
+    height: 100%;
  }
+
+#project-wrapper {
+    width: 100%;
+    height: 100%;
+}
 
  header, footer {
     height: 3rem;

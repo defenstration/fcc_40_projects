@@ -30,6 +30,18 @@ app.get("/reviews", (req, res) => {
     res.render("projects/projects/reviews/reviews.ejs")
 })
 
+app.get("/modal", (req, res) => {
+    res.render("projects/projects/modal/modal.ejs")
+})
+
+app.get("/faq", (req, res) => {
+    res.render("projects/projects/faq/faq.ejs")
+})
+
+app.get("/menu", (req, res) => {
+    res.render("projects/projects/menu/menu.ejs")
+})
+
 app.listen(port, () => {
     console.log(`Listening on port: ${port}`)
 })

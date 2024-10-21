@@ -1,0 +1,19 @@
+<%- include('../../../partials/header.ejs') %>
+    <link rel = "stylesheet" href = "/styles/project_specific_css/modal.css">
+    <div id = "background" class = "grid">
+        <h2>Modal</h2>
+
+        <div class = "flex" id = "project-wrapper">
+            <textarea id = "input" placeholder="Add some text!"></textarea>
+            <button id = "modal-btn">Click Me!</button>
+
+            <dialog id = "dialog-box">
+                <p id = "output-text"></p>
+                <button id = "clear-btn">Clear</button>
+            </dialog>
+        </div>
+    
+    </div>
+    <script src="/scripts/modal.js"></script>
+
+<%- include('../../../partials/footer.ejs') %>
