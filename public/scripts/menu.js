@@ -69,5 +69,15 @@ const meals = [
       class: "snack",
       img: ""
     }
-  ];
+];
+
+const menuContainer = document.getElementById("menu-container")
   
+menuContainer.innerHTML += meals.map((meal) => {
+  `<div class = "meal-card ${meal.class} grid" id = "${meal.name}">
+    <img src = ${meal.img} class = >
+    <h4 class = "meal-name">${meal.name}</h4>
+  
+  
+  </div>`
+})
