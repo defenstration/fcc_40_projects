@@ -71,13 +71,39 @@ const meals = [
     }
 ];
 
-const menuContainer = document.getElementById("menu-container")
-  
-menuContainer.innerHTML += meals.map((meal) => {
-  `<div class = "meal-card ${meal.class} grid" id = "${meal.name}">
-    <img src = ${meal.img} class = >
-    <h4 class = "meal-name">${meal.name}</h4>
-  
-  
-  </div>`
+window.onload = () => {
+  generateItems(meals)
+}
+
+const mealBtns = document.querySelectorAll(".meal-btn")
+
+mealBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    let mealType = btn.textContent.toLowerCase()
+
+    if (mealType === "all") {
+      generateItems(meals)
+    } else {
+        const output = meals.filter((meal) => {
+        return meal.class === mealType
+        })
+
+        generateItems(output)
+    }
+  })
 })
+
+const generateItems = (meals) => {
+  const menuContainer = document.getElementById("menu-container")
+
+  menuContainer.innerHTML = ""
+  
+  menuContainer.innerHTML += meals.map(meal => 
+    `<div class = "meal-card ${meal.class} grid" id = "${meal.name}">
+      <div class = "meal-img"><img src = ${meal.img} ></div>
+      <h4 class = "meal-name">${meal.name}</h4>
+      <p class = "meal-price">$${meal.price}</p>
+      <p class = "meal-description">${meal.description}</p>
+    </div>`
+  ).join('')
+}
