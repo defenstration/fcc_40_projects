@@ -42,6 +42,10 @@ app.get("/menu", (req, res) => {
     res.render("projects/projects/menu/menu.ejs")
 })
 
+app.get("/video-background", (req, res) => {
+    res.render("projects/projects/videoBg/video-background.ejs")
+})
+
 app.listen(port, () => {
     console.log(`Listening on port: ${port}`)
 })
