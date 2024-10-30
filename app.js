@@ -46,6 +46,10 @@ app.get("/video-background", (req, res) => {
     res.render("projects/projects/videoBg/video-background.ejs")
 })
 
+app.get("/scroll-page", (req, res) => {
+    res.render("projects/projects/scroll-page/scroll-page.ejs")
+})
+
 app.listen(port, () => {
     console.log(`Listening on port: ${port}`)
 })
